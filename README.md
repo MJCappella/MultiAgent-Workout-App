@@ -3,7 +3,7 @@ This app uses multiple LLMs that handle different tasks, routing the tasks to di
 
 ## Tools Used
 + Python
-+ Langflow (https://www.langflow.org/)
++ Langflow
 + Gemini
 + Astro DB
 + Streamlit
