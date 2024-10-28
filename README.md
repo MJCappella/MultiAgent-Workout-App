@@ -3,6 +3,11 @@ This app uses multipple LLMs that handle different tasks, routing the tasks to d
 
 ## Tools Used
 + Python
-This is an advanced multi-agent Workout App built using Python, Langflow, Gemini, Astro DB and Streamlit.
++ [Langflow](https://www.langflow.org/)
++ Gemini
++ Astro DB
++ Streamlit
+
+  
 
 
