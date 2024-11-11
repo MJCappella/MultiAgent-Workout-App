@@ -19,6 +19,7 @@ def personal_data_form():
         if personal_data_submit:
             if all([name, age, weight, height, gender, activity_level]):
                 with st.spinner():
+                    # save the data to astra db
                     st.success('Information submitted successfully')
             else:
                 st.warning('Please fill in all fields')
