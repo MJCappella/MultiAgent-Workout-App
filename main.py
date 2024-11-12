@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('The personal fitness tool')
+st.title('The Personal Fitness Tool')
 
 
 @st.fragment()
@@ -14,6 +14,7 @@ def personal_data_form():
         height = st.number_input("Height (cm)", min_value=0.0, max_value=250.0, step=0.1)
         gender = st.radio('Gender', ["Male", "Female", "Other"])
         activity_level = st.selectbox('Activity Level', ['Sedentary', 'Lightly Active', 'Moderately Active', 'Very Active', 'Extra Active'])
+        camera = st.camera_input('Take a picture of yourself')
 
         personal_data_submit = st.form_submit_button("Submit")
         if personal_data_submit:
