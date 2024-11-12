@@ -11,7 +11,7 @@ def personal_data_form():
         name = st.text_input("Name")
         age = st.number_input("Age", min_value=1, max_value=120, step=1)
         weight = st.number_input("Weight (kg)", min_value=0.0, max_value=300.0, step=0.1)
-        height = st.number_input("Height (cm)", min_value=0.0, max_value=250, step=0.1)
+        height = st.number_input("Height (cm)", min_value=0.0, max_value=250.0, step=0.1)
         gender = st.radio('Gender', ["Male", "Female", "Other"])
         activity_level = st.selectbox('Activity Level', ['Sedentary', 'Lightly Active', 'Moderately Active', 'Very Active', 'Extra Active'])
 
