@@ -1,10 +1,10 @@
 from langflow.load import run_flow_from_json
-from dotenv import load_env
+from dotenv import load_dotenv
 import requests
 from typing import Optional
 import os
 
-load_env()
+load_dotenv()
 
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
 LANGFLOW_ID = "c063f01a-4a05-45a1-94e9-bc96716d7a8b"
@@ -62,7 +62,8 @@ def run_flow(message: str,
     if application_token:
         headers = {"Authorization": "Bearer " + application_token, "Content-Type": "application/json"}
     response = requests.post(api_url, json=payload, headers=headers)
-    return response.json()["outputs"][0]["outputs"][0]["results"]["text"]["data"]["text"]
+    return response.json()
+    # ["outputs"][0]["outputs"][0]["results"]["text"]["data"]["text"]
 
 
 result = get_macros("name:mike, age:22, weight:70kgs, 175cm", "I want to lose weight")

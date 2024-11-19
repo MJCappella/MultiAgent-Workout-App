@@ -245,7 +245,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "google_api_key",
-                "value": "GOOGLE_API_KEY",
+                "value": "google_api_key",
                 "display_name": "Google API Key",
                 "advanced": false,
                 "input_types": ["Message"],
